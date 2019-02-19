@@ -1,0 +1,16 @@
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<div id="app">
+  {{ foreach message in messages }}
+    {{ message }}
+  {{ endforeach }}
+</div>
+
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      messages: ['Hello Vue!', 'Lucas']
+    }
+  })
+</script>

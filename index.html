@@ -1,0 +1,118 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<style>
+.btn-lg{
+  margin: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  float: right;
+}
+.btn-lg:hover{
+  zoom: 120%;
+  background: #dc3545;
+  border: #dc3545;
+  transtion-timing-function: ease-in-out;
+}
+.card{
+  border: none;
+}
+.btn-lg i{
+  zoom: 125%;
+  position: relative;
+  left: -3px;
+}
+li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+}
+.poll{
+  position: absolute;
+  overflow: hidden;
+}
+ul li{
+  margin-top: 10px;
+}
+li{
+  font-size: 12px;
+  font-weight: bold;
+
+}
+
+ul{
+  padding-bottom: 10px;
+  margin: 20px;
+  background: #fff;
+  height: auto;
+  border-radius: 50px;
+  border: solid thin #cecece;
+  width: 500px;
+}
+i{
+  padding: 20px;
+  border-radius: 50%;
+  color: #fff;
+  margin: 5px;
+  background: teal;
+}
+i:hover{
+  cursor: pointer;
+  background-color: #dc3545;
+  transtion-timing-function: ease-in-out;
+}
+button{
+  zoom: 90%;
+  background: transparent;
+  border: none;
+}
+</style>
+</head>
+<body>
+<br><br><br><br><br><br>
+<div class = "container">
+  <div class = "row">
+    <div class = "">
+      <div class = "poll">
+        <ul>
+          <li align = "center"><button class = "btn btn-danger btn-lg "><i class = "fa fa-heart-broken"></i></button><br>Pessimo</li>
+          <li align = "center"><button class = "btn btn-warning btn-lg "><i class = "fa fa-sad-tear"></i></button><br>Ruim</li>
+          <li align = "center"><button class = "btn btn-info btn-lg "><i class = "fa fa-meh"></i></button><br>Regular</li>
+          <li align = "center"><button class = "btn btn-primary btn-lg "><i class = "fa fa-thumbs-up"></i></button><br>Bom</li>
+          <li align = "center"><button class = "btn btn-success btn-lg "><i class = "fa fa-heart"></i></button><br>Otimo</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div-->
+<!--div class = "poll">
+<ul>
+  <li><button id = "love"><i class = "fa fa-2x fa-heart bg-success"></i></button></li>
+  <li><button><i class = "fa fa-2x fa-thumbs-up bg-primary"></i></button></li>
+  <li><button><i class = "fa fa-2x fa-meh "></i></button></li>
+  <li><button><i class = "fa fa-2x fa-frown bg-warning"></i></button></li>
+  <li><button><i class = "fa fa-2x fa-heart-broken bg-danger"></i></button></li>
+</ul>
+</div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+  <script type = "text/javascript">
+    $("document").ready(function(){
+      var i = 0;
+      $("#love").click(function(){
+          e.preventDefault();
+          i = i+1;
+          $.ajax({
+            type: 'POST',
+            url: 'ajax.php',
+            data:,
+            response: ,
+          });
+      });
+    });
+  </script>
+</body>
+</html>
