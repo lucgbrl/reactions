@@ -55,14 +55,26 @@
         border-radius: 50px;
       }
     </style>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script type = "text/javascript">
+      $(document).ready(function(){
+        $("#b").hide();
+        $("#menu-toggle").click(function(){
+          $("#b").show();
+        });
+      });
+    </script>
+
   </head>
   <body>
       <br><br><br><br>
       <!-- Begins here-->
       <div class = "row">
         <div class = "col-md-6">
-          <ul id = "">
-              <li align = "center"><button id = "toggle" class = "btn btn-danger btn-lg "><i class = "fa fa-flag"></i></button><br><span>Votar</span></li>
+          <ul id = "lista">
+              <li align = "center"><button id = "menu-toggle" class = "btn btn-danger btn-lg "><i class = "fa fa-flag"></i></button><br></li>
               <div id = "b">
                 <li align = "center"><button class = "btn btn-warning btn-lg "><i class = "fa fa-sad-tear"></i></button><br><span>Péssimo</span></li>
                 <li align = "center"><button class = "btn btn-warning btn-lg "><i class = "fa fa-sad-tear"></i></button><br><span>Ruim</span></li>
@@ -73,14 +85,5 @@
           </ul>
         </div>
       </div>
-
-      <script>
-      $(document).ready(function(){
-        $("#b").hide();
-        $("#toggle").click(function(){
-          alert("Hey");
-        });
-      });
-      </script>
   </body>
 </html>
