@@ -2,8 +2,7 @@
 
 Add Reactions/Poll system to any website with a Facebook look and feel, build with JQuery and Vue.JS
 
-![Teste](https://fbnewsroomus.files.wordpress.com/2016/02/reactions-image-en_us.png?w=960)
-
+![Captura da aplicação em 19/02](https://github.com/lucgbrl/reactions/blob/master/images/cap.PNG)
 - [x] Font Awesome Icons
 - [x] Bootstrap Added to project
 - [x] JQuery Added to project
