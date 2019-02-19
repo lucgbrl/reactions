@@ -62,7 +62,7 @@
       $(document).ready(function(){
         $("#b").hide();
         $("#menu-toggle").click(function(){
-          $("#b").show();
+          $("#b").slideToggle(200);
         });
       });
     </script>
@@ -74,14 +74,14 @@
       <div class = "row">
         <div class = "col-md-6">
           <ul id = "lista">
-              <li align = "center"><button id = "menu-toggle" class = "btn btn-danger btn-lg "><i class = "fa fa-flag"></i></button><br></li>
               <div id = "b">
-                <li align = "center"><button class = "btn btn-warning btn-lg "><i class = "fa fa-sad-tear"></i></button><br><span>Péssimo</span></li>
-                <li align = "center"><button class = "btn btn-warning btn-lg "><i class = "fa fa-sad-tear"></i></button><br><span>Ruim</span></li>
-                <li align = "center"><button class = "btn btn-info btn-lg "><i class = "fa fa-meh"></i></button><br><span>Regular</span></li>
-                <li align = "center"><button class = "btn btn-primary btn-lg "><i class = "fa fa-thumbs-up"></i></button><br><span>Bom</span></li>
                 <li align = "center"><button class = "btn btn-success btn-lg "><i class = "fa fa-heart"></i></button><br><span>Otimo</span></li>
+                <li align = "center"><button class = "btn btn-primary btn-lg "><i class = "fa fa-thumbs-up"></i></button><br><span>Bom</span></li>
+                <li align = "center"><button class = "btn btn-info btn-lg "><i class = "fa fa-meh"></i></button><br><span>Regular</span></li>
+                <li align = "center"><button class = "btn btn-warning btn-lg "><i class = "fa fa-sad-tear"></i></button><br><span>Ruim</span></li>
+                <li align = "center"><button class = "btn btn-warning btn-lg "><i class = "fa fa-sad-tear"></i></button><br><span>Péssimo</span></li>
               </div>
+              <li align = "center"><button id = "menu-toggle" class = "btn btn-danger btn-lg "><i class = "fa fa-poll-h"></i></button><br></li>
           </ul>
         </div>
       </div>
