@@ -46,11 +46,9 @@
       li:hover{
         cursor: pointer;
       }
-      li{
-        display: none;
-      }
+
       li:first-child{
-        display: block;
+        display: inline;
       }
       ul{
         background: #fff;
@@ -60,6 +58,15 @@
         padding-bottom: 10px;
         border-radius: 50px;
       }
+      #hide{
+        visibility: hidden;
+      }
+      #b{
+        visibility: hidden;
+      }
+      #a:hover #b{
+        visibility: visible;
+      }
     </style>
   </head>
   <body>
@@ -67,12 +74,15 @@
       <!-- Begins here-->
       <div class = "row">
         <div class = "col-md-6">
-          <ul>
-            <li align = "center"><button class = "btn btn-danger btn-lg "><i class = "fa fa-heart-broken"></i></button><br><span>Pessimo</span></li>
-            <li align = "center"><button class = "btn btn-warning btn-lg "><i class = "fa fa-sad-tear"></i></button><br><span>Ruim</span></li>
-            <li align = "center"><button class = "btn btn-info btn-lg "><i class = "fa fa-meh"></i></button><br><span>Regular</span></li>
-            <li align = "center"><button class = "btn btn-primary btn-lg "><i class = "fa fa-thumbs-up"></i></button><br><span>Bom</span></li>
-            <li align = "center"><button class = "btn btn-success btn-lg "><i class = "fa fa-heart"></i></button><br><span>Otimo</span></li>
+          <ul id = "a">
+            <li id = "trigger" align = "center"><button class = "btn btn-danger btn-lg "><i class = "fa fa-heart-broken"></i></button><br><span>Pessimo</span></li>
+            <ul id = "b">
+              <li align = "center"><button class = "btn btn-warning btn-lg "><i class = "fa fa-sad-tear"></i></button><br><span>Ruim</span></li>
+              <li align = "center"><button class = "btn btn-info btn-lg "><i class = "fa fa-meh"></i></button><br><span>Regular</span></li>
+              <li align = "center"><button class = "btn btn-primary btn-lg "><i class = "fa fa-thumbs-up"></i></button><br><span>Bom</span></li>
+              <li align = "center"><button class = "btn btn-success btn-lg "><i class = "fa fa-heart"></i></button><br><span>Otimo</span></li>
+            </ul>
+            </div>
           </ul>
         </div>
       </div>
