@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang = "pt-br">
   <head>
     <!-- meta tags adicionadas -->
     <meta charset="utf-8">
@@ -36,16 +36,15 @@
           <div class = "col-md-6">
             <ul id = "lista">
                 <li align = "center"><button id = "menu-toggle" class = "btn btn-success btn-lg "><i class = "fa fa-poll-h"></i></button><br></li>
-                <div id = "b">
+                  <!--/ Elementos identificados com a tag 'b' serão ocultados da visualização até que o toggle seja clicado/-->
+                  <div id = "b">
                   <li id = "b" align = "center"><button class = "btn btn-success btn-lg "><i class = "fa fa-heart"></i></button><br><span>Otimo</span></li>
                   <li id = "b" align = "center"><button class = "btn btn-primary btn-lg "><i class = "fa fa-thumbs-up"></i></button><br><span>Bom</span></li>
                   <li id = "b" align = "center"><button class = "btn btn-info btn-lg "><i class = "fa fa-meh"></i></button><br><span>Regular</span></li>
                   <li id = "b" align = "center"><button class = "btn btn-warning btn-lg "><i class = "fa fa-sad-tear"></i></button><br><span>Ruim</span></li>
                   <li id = "b" align = "center"><button class = "btn btn-danger btn-lg "><i class = "fa fa-sad-tear"></i></button><br><span>Péssimo</span></li>
                   <li>
-
-                    <!-- Card -->
-
+                  <!--/ Card com os gráficos. O script dos gráficos precisa ser atualizado em um dos próximos commits  /-->
                   <div class = "card shadow-sm" id = "card">
                     <div class = "card-body">
                         <p align = "center" class = "heading-4">Como você avalia este conteúdo?</p>
@@ -65,14 +64,15 @@
                       <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
-                  <!-- Card -->
+                  <!-- Final do card -->
                 </div>
-                  <!-- B -->
+                  <!-- Final da zona oculta pelo jQuery -->
               </li>
             </div>
           </ul>
         </div>
       </div>
     </div>
+    <!--/ As tags body e html serão removidas para melhorar a integração com a página onde os formulários serão inseridos /-->
   </body>
 </html>
