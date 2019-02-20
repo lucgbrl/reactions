@@ -1,0 +1,64 @@
+  .btn{
+        padding: 5px;
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+      }
+      .btn:hover{
+          background: #dc3545;
+          transition: .3s;
+          transform: scale(1.2);
+          transform-transtion-time: ease-in-out;
+          border: none;
+      }
+      .btn:active{
+        transform-transtion-time: ease-in-out;
+
+      }
+      li{
+        font-size: 12px;
+        padding: 5px;
+        list-style: none;
+        display: inline-block;
+      }
+      li button{
+        margin-bottom: 10px;
+      }
+      li span{
+        /*position: relative;
+        top: -100px;*/
+        color: #fff;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: #48373e;
+        border-radius: 50px;
+        opacity: .8;
+      }
+      li:hover{
+        cursor: pointer;
+      }
+      ul{
+        background: #fff;
+        width: 0 auto;
+        height: 70px;
+        padding-top: 0px;
+        padding-bottom: 10px;
+        border-radius: 50px;
+      }
+      .card{
+        width: 400px;
+        margin-bottom: 50px;
+      }
+      .progress{
+        margin-bottom: 25px;
+      }
+      .teste{
+        position: absolute;
+        /*bottom: 0px;
+        right: 0px;*/
+      }
+      .b{
+        position: absolute;
+        top: -500px;
+      }
