@@ -53,12 +53,27 @@
       .progress{
         margin-bottom: 25px;
       }
-      .teste{
+      /*.teste{
         position: absolute;
-        /*bottom: 0px;
-        right: 0px;*/
-      }
+        bottom: 0px;
+        right: 0px;
+      }*/
       .b{
         position: absolute;
         top: -500px;
+      }
+
+      .teste{
+        position: fixed;
+        bottom: 50px;
+        left: 50px;
+      }
+
+      .teste ul{
+        position: relative;
+        top: -100px;
+      }
+      #b{
+        position: relative;
+        top: -100px;
       }

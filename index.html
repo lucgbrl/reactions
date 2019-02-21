@@ -1,118 +1,87 @@
-<html>
-<head>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<style>
-.btn-lg{
-  margin: 0px;
-  width: 50px;
-  height: 50px;
-  border-radius: 100px;
-  float: right;
-}
-.btn-lg:hover{
-  zoom: 120%;
-  background: #dc3545;
-  border: #dc3545;
-  transtion-timing-function: ease-in-out;
-}
-.card{
-  border: none;
-}
-.btn-lg i{
-  zoom: 125%;
-  position: relative;
-  left: -3px;
-}
-li{
-  list-style: none;
-  display: inline-block;
-  margin-right: 5px;
-}
-.poll{
-  position: absolute;
-  overflow: hidden;
-}
-ul li{
-  margin-top: 10px;
-}
-li{
-  font-size: 12px;
-  font-weight: bold;
+<!DOCTYPE html>
+<html lang = "pt-br">
+  <head>
+    <!-- meta tags adicionadas -->
+    <meta charset="utf-8">
 
-}
+    <!--folhas de estilo adicionadas -->
 
-ul{
-  padding-bottom: 10px;
-  margin: 20px;
-  background: #fff;
-  height: auto;
-  border-radius: 50px;
-  border: solid thin #cecece;
-  width: 500px;
-}
-i{
-  padding: 20px;
-  border-radius: 50%;
-  color: #fff;
-  margin: 5px;
-  background: teal;
-}
-i:hover{
-  cursor: pointer;
-  background-color: #dc3545;
-  transtion-timing-function: ease-in-out;
-}
-button{
-  zoom: 90%;
-  background: transparent;
-  border: none;
-}
-</style>
-</head>
-<body>
-<br><br><br><br><br><br>
-<div class = "container">
-  <div class = "row">
-    <div class = "">
-      <div class = "poll">
-        <ul>
-          <li align = "center"><button class = "btn btn-danger btn-lg "><i class = "fa fa-heart-broken"></i></button><br>Pessimo</li>
-          <li align = "center"><button class = "btn btn-warning btn-lg "><i class = "fa fa-sad-tear"></i></button><br>Ruim</li>
-          <li align = "center"><button class = "btn btn-info btn-lg "><i class = "fa fa-meh"></i></button><br>Regular</li>
-          <li align = "center"><button class = "btn btn-primary btn-lg "><i class = "fa fa-thumbs-up"></i></button><br>Bom</li>
-          <li align = "center"><button class = "btn btn-success btn-lg "><i class = "fa fa-heart"></i></button><br>Otimo</li>
-        </ul>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- scripts do bootstrap adicionados -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+       <!--/ Inclusão da versão minificada da bliblioteca jQuery /-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <!--/
+
+      O código a seguir implementa a função que oculta os botões de votação ao carregar a página
+      E após isso as ações de acordo com a interação do usuário
+      Estão pendentes os scripts de visualização (mostra o botão ao atingir a sessão)
+      O script de ocultar e aparecer com as animações
+
+
+    /-->
+  <style>
+    .teste{
+      position: fixed;
+      padding: 50px;
+      bottom: 16px;
+      right: 16px;
+    }
+  </style>
+  </head>
+  <body>
+      <br><br><br><br>
+      <!-- Begins here-->
+      <section class = "container pull-right">
+      <div class = "final">
+        <div class = "row">
+          <div class = "col-md-12">
+            <ul id = "lista">
+                <li align = "center"><button id = "menu-toggle" class = "btn btn-success btn-lg "><i class = "fa fa-poll-h"></i></button><br></li>
+                  <!--/ Elementos identificados com a tag 'b' serão ocultados da visualização até que o toggle seja clicado/-->
+                  <div id = "b">
+                    <li id = "b" align = "center"><button class = "btn btn-success btn-lg "><i class = "fa fa-heart"></i></button><br><span>Otimo</span></li>
+                    <li id = "b" align = "center"><button class = "btn btn-primary btn-lg "><i class = "fa fa-thumbs-up"></i></button><br><span>Bom</span></li>
+                    <li id = "b" align = "center"><button class = "btn btn-info btn-lg "><i class = "fa fa-meh"></i></button><br><span>Regular</span></li>
+                    <li id = "b" align = "center"><button class = "btn btn-warning btn-lg "><i class = "fa fa-sad-tear"></i></button><br><span>Ruim</span></li>
+                    <li id = "b" align = "center"><button class = "btn btn-danger btn-lg "><i class = "fa fa-sad-tear"></i></button><br><span>Péssimo</span></li>
+                    <li>
+                      <!--/ Card com os gráficos. O script dos gráficos precisa ser atualizado em um dos próximos commits  /-->
+                  <div class = "card shadow-sm" id = "card">
+                    <div class = "card-body">
+                        <p align = "center" class = "heading-4">Como você avalia este conteúdo?</p>
+                    <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <!-- Final do card -->
+                </div>
+                  <!-- Final da zona oculta pelo jQuery -->
+              </li>
+            </div>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</div-->
-<!--div class = "poll">
-<ul>
-  <li><button id = "love"><i class = "fa fa-2x fa-heart bg-success"></i></button></li>
-  <li><button><i class = "fa fa-2x fa-thumbs-up bg-primary"></i></button></li>
-  <li><button><i class = "fa fa-2x fa-meh "></i></button></li>
-  <li><button><i class = "fa fa-2x fa-frown bg-warning"></i></button></li>
-  <li><button><i class = "fa fa-2x fa-heart-broken bg-danger"></i></button></li>
-</ul>
-</div>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-  <script type = "text/javascript">
-    $("document").ready(function(){
-      var i = 0;
-      $("#love").click(function(){
-          e.preventDefault();
-          i = i+1;
-          $.ajax({
-            type: 'POST',
-            url: 'ajax.php',
-            data:,
-            response: ,
-          });
-      });
-    });
-  </script>
-</body>
+  </section>
+    <!--/ As tags body e html serão removidas para melhorar a integração com a página onde os formulários serão inseridos /-->
+  </body>
 </html>

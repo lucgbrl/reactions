@@ -3,25 +3,25 @@
   <head>
     <!-- meta tags adicionadas -->
     <meta charset="utf-8">
-    
+
     <!--folhas de estilo adicionadas -->
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- scripts do bootstrap adicionados -->
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
        <!--/ Inclusão da versão minificada da bliblioteca jQuery /-->
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
-    <!--/ 
+    <!--/
 
-      O código a seguir implementa a função que oculta os botões de votação ao carregar a página 
+      O código a seguir implementa a função que oculta os botões de votação ao carregar a página
       E após isso as ações de acordo com a interação do usuário
-      Estão pendentes os scripts de visualização (mostra o botão ao atingir a sessão)   
+      Estão pendentes os scripts de visualização (mostra o botão ao atingir a sessão)
       O script de ocultar e aparecer com as animações
 
 
@@ -31,20 +31,21 @@
   <body>
       <br><br><br><br>
       <!-- Begins here-->
+      <section class = "container pull-right">
       <div class = "teste">
         <div class = "row">
-          <div class = "col-md-6">
+          <div class = "col-md-12">
             <ul id = "lista">
                 <li align = "center"><button id = "menu-toggle" class = "btn btn-success btn-lg "><i class = "fa fa-poll-h"></i></button><br></li>
                   <!--/ Elementos identificados com a tag 'b' serão ocultados da visualização até que o toggle seja clicado/-->
                   <div id = "b">
-                  <li id = "b" align = "center"><button class = "btn btn-success btn-lg "><i class = "fa fa-heart"></i></button><br><span>Otimo</span></li>
-                  <li id = "b" align = "center"><button class = "btn btn-primary btn-lg "><i class = "fa fa-thumbs-up"></i></button><br><span>Bom</span></li>
-                  <li id = "b" align = "center"><button class = "btn btn-info btn-lg "><i class = "fa fa-meh"></i></button><br><span>Regular</span></li>
-                  <li id = "b" align = "center"><button class = "btn btn-warning btn-lg "><i class = "fa fa-sad-tear"></i></button><br><span>Ruim</span></li>
-                  <li id = "b" align = "center"><button class = "btn btn-danger btn-lg "><i class = "fa fa-sad-tear"></i></button><br><span>Péssimo</span></li>
-                  <li>
-                  <!--/ Card com os gráficos. O script dos gráficos precisa ser atualizado em um dos próximos commits  /-->
+                    <li id = "b" align = "center"><button class = "btn btn-success btn-lg "><i class = "fa fa-heart"></i></button><br><span>Otimo</span></li>
+                    <li id = "b" align = "center"><button class = "btn btn-primary btn-lg "><i class = "fa fa-thumbs-up"></i></button><br><span>Bom</span></li>
+                    <li id = "b" align = "center"><button class = "btn btn-info btn-lg "><i class = "fa fa-meh"></i></button><br><span>Regular</span></li>
+                    <li id = "b" align = "center"><button class = "btn btn-warning btn-lg "><i class = "fa fa-sad-tear"></i></button><br><span>Ruim</span></li>
+                    <li id = "b" align = "center"><button class = "btn btn-danger btn-lg "><i class = "fa fa-sad-tear"></i></button><br><span>Péssimo</span></li>
+                    <li>
+                      <!--/ Card com os gráficos. O script dos gráficos precisa ser atualizado em um dos próximos commits  /-->
                   <div class = "card shadow-sm" id = "card">
                     <div class = "card-body">
                         <p align = "center" class = "heading-4">Como você avalia este conteúdo?</p>
@@ -73,9 +74,7 @@
         </div>
       </div>
     </div>
+  </section>
     <!--/ As tags body e html serão removidas para melhorar a integração com a página onde os formulários serão inseridos /-->
   </body>
 </html>
-
-
-//  
